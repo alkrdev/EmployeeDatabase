@@ -1,8 +1,8 @@
-let url = "http://127.0.0.1:3000"
+let url = "http://localhost:3000"
 
 const request = async () => {
     let response = await fetch(url, {mode: 'cors'});
-
+    console.log(response)
     if (response.ok) { 
         let json = await response.json();
         console.log(json)
