@@ -5,6 +5,8 @@ const cors = require('cors');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+app.use(cors())
+
 const connection = mysql.createConnection({
     host: "HOST",
     user: "USER",
@@ -13,10 +15,8 @@ const connection = mysql.createConnection({
 })
 
 connection.connect()
-app.use(cors())
 
 require('./routes/routes.js')(app, connection);
-
 
 app.listen(PORT, () => {
     console.log(`SERVER RUNNING ON ${PORT}`)
