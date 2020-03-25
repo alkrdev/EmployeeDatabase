@@ -1,24 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #333333;
+    height: 75px;
+    width: 100%;
+}
+
+header p {
+    font-size: 24px;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 50%;
+    margin: 30px auto;
+}
+
+/* DATABASE TABLE */
 #databaseTable {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  #databaseTable td, #databaseTable th {
+}
+
+#databaseTable td, #databaseTable th {
     border: 1px solid #ddd;
     padding: 8px;
-  }
-  
-  #databaseTable tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #databaseTable tr:hover {background-color: #ddd;}
-  
-  #databaseTable th {
+}
+
+#databaseTable tr:nth-child(even) { background-color: #f2f2f2; }
+
+#databaseTable tr:hover { background-color: #ddd; }
+
+#databaseTable th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #4CAF50;
     color: white;
-  }
-
-  /* FROM W3SCHOOLS https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+}
+/* END OF DATABASE TABLE */
+/* FROM W3SCHOOLS https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
